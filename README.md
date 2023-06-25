@@ -24,11 +24,22 @@ We can conclude that the second element of the array is stored in memory in big-
 `double x2 (double a)` is a function for x²<br/>
 `double func (double x)` is a function to use the previous two<br/>
 `double number` – the number that will be entered from the keyboard<br/>
-**4)The result of the program execution and its explanation:** <br/>
+**4)The result of the program execution:** <br/>
 ![image](https://github.com/BohdanPatrin/University_projects/assets/127937644/3fc4eb61-12bb-4161-b1d2-4194ba6addf1) <br/>
 Debugging: <br/>
 ![image](https://github.com/BohdanPatrin/University_projects/assets/127937644/105cf5fb-5851-4e09-ac4f-cc2619662e8b) <br/>
 ![image](https://github.com/BohdanPatrin/University_projects/assets/127937644/52cbd2e4-7694-4220-85a5-9176b3661c52) <br/>
-
+•***Laboratory 3 "Dynamic memory"***:<br/>
+**1)The purpose of the work:** Investigate the behavior of dynamic memory.<br/>
+**2)Formulation of the work:** Write an html code generator program (in particular, a table) with data on the current pointer values and the difference between them. Run the program code simultaneously in three windows.<br/>
+**3)Program explanation:**`long long *pi` is the first pointer to dynamic memory<br/>
+`long long *otherpi` – second pointer to dynamic memory<br/>
+`int d` – contains the difference between otherpi and pi<br/>
+`int d_temp` – a temporary container for d (required to check the number of repetitions of the values of the d variable)<br/>
+`unsigned short int counter` – a counter of the number of repetitions of the values of the variable d<br/>
+**4)The result of the program execution its explanation:**<br/>
+![image](https://github.com/BohdanPatrin/University_projects/assets/127937644/01015712-4df3-42db-b361-f97e266c2cbb)
+ <br/>
+Dynamic memory is usually taken from a random area of memory (if you look at three different tables, you will see that the addresses are completely different). You can also notice the peculiarity that on the first iteration of the loop the difference is d = 134, and on all subsequent iterations the difference is equal to 4, which is close to the size of the int variable.
 
 
