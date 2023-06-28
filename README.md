@@ -1,4 +1,4 @@
-# University_projects
+# Laboratory works
 •***Laboratory 1 "Pointer. Address arithmetic on arrays"***:<br/>
 **1)The purpose of the work:** Learn how to create pointers to arrays, use pointer arithmetic and index array elements using it.<br/>
 **2)Formulation of the work:** 1. Make an array of integers of size 4.<br/>
