@@ -42,4 +42,13 @@ Debugging: <br/>
  <br/>
 Dynamic memory is usually taken from a random area of memory (if you look at three different tables, you will see that the addresses are completely different). You can also notice the peculiarity that on the first iteration of the loop the difference is d = 134, and on all subsequent iterations the difference is equal to 4, which is close to the size of the int variable.
 
-
+•***Laboratory 5 "Exceptions: try, catch"***:<br/>
+**1)The purpose of the work:** Use exceptions in the program. Write two functions that are controlled by try-catch blocks.<br/>
+**2)Formulation of the work:** Implement two functions f(x) and g(x) that return different results depending on the value of the argument x. Use the try-catch block in the main function when calling the functions g(x) and f(x).<br/>
+**3)Program explanation:** `double f(double x)` - returns x/2 if x is in the interval (0, 1) and does not exceed 0.8, and throws an exception with the value 'error' if x is greater than 0.8, or throw an exception. with the value 'c' if x is less than 0.7 <br/>
+`double g(double x)` - checks if x is in the interval (0, 1) and calls the function f(x) to return the result. The g(x) function throws an exception with a value of -1 if x does not belong to the specified interval. If an exception is thrown during the call to f(x), it will be caught by the try-catch block, an error message will be displayed, and an exception with value -2 will be thrown.<br/>
+`double y` is a variable in the main function that receives a random number (from 0.5 to 1.5) as its value and is passed to the function g(x). If the call to the g(x) function is successful, the result is displayed on the screen. Otherwise, an exception is thrown, which is caught and displayed in the try-catch block.<br/>
+So, the program generates a random number and checks its value using the two user functions above. If the value meets the specified criteria, the program returns the result of the function f(x). otherwise, an exception is thrown.<br/>
+**4)The result of the program execution its explanation:**<br/>
+![image](https://github.com/BohdanPatrin/University_projects/assets/127937644/6ccfde7b-52a9-4363-adc7-741396cdda98)
+ <br/>
